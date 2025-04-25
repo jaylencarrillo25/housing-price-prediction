@@ -1,29 +1,19 @@
-from pathlib import Path
+from sklearn.preprocessing import MinMaxScaler
 
-from loguru import logger
-from tqdm import tqdm
-import typer
+def clean_data(df):
+    """Drop missing values and standardize lot size units."""
+    df = df.dropna()
+    df.loc[df['lot_size_units'] == 'acre', 'lot_size'] *= 43560
+    df['lot_size_units'] = 'sqft'
+    df = df.drop(columns=['size_units', 'lot_size_units', 'zip_code'])
+    return df
 
-from housing_predictor.config import PROCESSED_DATA_DIR
+def engineer_features(df):
+    """Create new features and scale numeric columns."""
+    df['price_per_sqft'] = df['price'] / df['size']
+    df['bath_bed_ratio'] = df['baths'] / df['beds']
 
-app = typer.Typer()
+    scaler = MinMaxScaler()
+    df[['size', 'lot_size', 'price', 'price_per_sqft']] = scaler.fit_transform(df[['size', 'lot_size', 'price', 'price_per_sqft']])
 
-
-@app.command()
-def main(
-    # ---- REPLACE DEFAULT PATHS AS APPROPRIATE ----
-    input_path: Path = PROCESSED_DATA_DIR / "dataset.csv",
-    output_path: Path = PROCESSED_DATA_DIR / "features.csv",
-    # -----------------------------------------
-):
-    # ---- REPLACE THIS WITH YOUR OWN CODE ----
-    logger.info("Generating features from dataset...")
-    for i in tqdm(range(10), total=10):
-        if i == 5:
-            logger.info("Something happened for iteration 5.")
-    logger.success("Features generation complete.")
-    # -----------------------------------------
-
-
-if __name__ == "__main__":
-    app()
+    return df
