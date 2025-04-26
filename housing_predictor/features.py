@@ -12,7 +12,7 @@ def clean_data(df):
 def engineer_features(df):
     """Create new features and scale numeric columns."""
     df['price_per_sqft'] = df['price'] / df['size']
-    df['bath_bed_ratio'] = df['baths'] / df['beds'].replace(0, np.nan) # test
+    df['bath_bed_ratio'] = df['baths'] / df['beds'].replace(0, np.nan)
 
     scaler = MinMaxScaler()
     df[['size', 'lot_size', 'price_per_sqft']] = scaler.fit_transform(
