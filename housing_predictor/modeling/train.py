@@ -1,30 +1,14 @@
-from pathlib import Path
+from sklearn.linear_model import LinearRegression
+from sklearn.ensemble import RandomForestRegressor
 
-from loguru import logger
-from tqdm import tqdm
-import typer
+def train_linear_regression(X, y):
+    """Train a Linear Regression model."""
+    model = LinearRegression()
+    model.fit(X, y)
+    return model
 
-from housing_predictor.config import MODELS_DIR, PROCESSED_DATA_DIR
-
-app = typer.Typer()
-
-
-@app.command()
-def main(
-    # ---- REPLACE DEFAULT PATHS AS APPROPRIATE ----
-    features_path: Path = PROCESSED_DATA_DIR / "features.csv",
-    labels_path: Path = PROCESSED_DATA_DIR / "labels.csv",
-    model_path: Path = MODELS_DIR / "model.pkl",
-    # -----------------------------------------
-):
-    # ---- REPLACE THIS WITH YOUR OWN CODE ----
-    logger.info("Training some model...")
-    for i in tqdm(range(10), total=10):
-        if i == 5:
-            logger.info("Something happened for iteration 5.")
-    logger.success("Modeling training complete.")
-    # -----------------------------------------
-
-
-if __name__ == "__main__":
-    app()
+def train_random_forest(X, y):
+    """Train a random forest regressor."""
+    model = RandomForestRegressor(random_state=42)
+    model.fit(X, y)
+    return model
