@@ -1,5 +1,7 @@
-# Data
-/data/
+# Ignore all data except raw CSVs
+data/*
+!data/raw/
+!data/raw/*.csv
 
 # Mac OS-specific storage files
 .DS_Store
