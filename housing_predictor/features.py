@@ -2,7 +2,7 @@ from sklearn.preprocessing import MinMaxScaler
 
 def clean_data(df):
     """Drop missing values and standardize lot size units."""
-    df = df.dropna()
+    df = df.dropna().copy()
     df.loc[df['lot_size_units'] == 'acre', 'lot_size'] *= 43560
     df['lot_size_units'] = 'sqft'
     df = df.drop(columns=['size_units', 'lot_size_units', 'zip_code'])
