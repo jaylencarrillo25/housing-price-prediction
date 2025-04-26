@@ -14,6 +14,8 @@ def engineer_features(df):
     df['bath_bed_ratio'] = df['baths'] / df['beds']
 
     scaler = MinMaxScaler()
-    df[['size', 'lot_size', 'price', 'price_per_sqft']] = scaler.fit_transform(df[['size', 'lot_size', 'price', 'price_per_sqft']])
+    df[['size', 'lot_size', 'price', 'price_per_sqft']] = scaler.fit_transform(
+        df[['size', 'lot_size', 'price', 'price_per_sqft']]
+    )
 
     return df
