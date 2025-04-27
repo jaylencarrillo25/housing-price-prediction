@@ -1,5 +1,6 @@
 # Seattle Housing Price Prediction Model
 Jaylen Carrillo
+
 INST414 0202
 
 <a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
