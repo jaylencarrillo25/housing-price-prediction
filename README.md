@@ -1,4 +1,4 @@
-# Housing Price Prediction
+# Seattle Housing Price Prediction Model
 
 <a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
@@ -26,6 +26,9 @@ Clone the repository:
 Install all dependencies by running:
 
 `pip install -r requirements.txt`
+
+Download the dataset:
+https://www.kaggle.com/datasets/samuelcortinhas/house-price-prediction-seattle 
 
 ## Project Organization
 
