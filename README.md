@@ -8,7 +8,6 @@ Predicting Seattle home prices using machine learning to support first-time buye
 
 ## Dependencies
 This project requires the following Python libraries:
-
 - pandas
 - numpy
 - scikit-learn
@@ -16,6 +15,13 @@ This project requires the following Python libraries:
 - seaborn
 - jupyter
 - joblib
+
+## Setting Up the Environment
+Clone the repository:
+
+`git clone https://github.com/jaylencarrillo25/housing-price-prediction.git`
+
+`cd housing-price-prediction`
 
 Install all dependencies by running:
 
