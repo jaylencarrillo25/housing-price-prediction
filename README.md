@@ -6,6 +6,10 @@
 
 Predicting Seattle home prices using machine learning to support first-time buyers and inform real estate decisions.
 
+Dataset used:
+
+https://www.kaggle.com/datasets/samuelcortinhas/house-price-prediction-seattle 
+
 ## Dependencies
 This project requires the following Python libraries:
 - pandas
@@ -17,19 +21,16 @@ This project requires the following Python libraries:
 - joblib
 
 ## Setting Up the Environment
-Clone the repository:
+1. Clone the repository:
 
 `git clone https://github.com/jaylencarrillo25/housing-price-prediction.git`
 
 `cd housing-price-prediction`
 
-Install all dependencies by running:
+2. Install all dependencies by running:
 
 `pip install -r requirements.txt`
 
-Download the dataset:
-
-https://www.kaggle.com/datasets/samuelcortinhas/house-price-prediction-seattle 
 
 ## Project Organization
 
