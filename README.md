@@ -42,14 +42,16 @@ This project requires the following Python libraries:
 
 ## Evaluating Models
 - The following machine learning models are trained and evaluated within the notebook:
- - Linear Regression
- - Ridge Regression
- - Random Forest Regressor
+  
+  - Linear Regression  
+  - Ridge Regression  
+  - Random Forest Regressor  
 
 - Evaluation metrics calculated for each model include:
- - Root Mean Squared Error (RMSE)
- - Mean Absolute Error (MAE)
- - R² score
+  
+  - Root Mean Squared Error (RMSE)  
+  - Mean Absolute Error (MAE)  
+  - R² score  
 
 - Model performances are printed and compared at the end of the notebook.
 
