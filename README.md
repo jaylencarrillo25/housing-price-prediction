@@ -35,8 +35,28 @@ This project requires the following Python libraries:
 
 `jupyter notebook`
 
-4. In the Jupyter interface, navigate to the housing-price-prediction folder and open Sprint3_Housing_Modeling.ipynb to view and run the notebook.
+## Running the Data Processing Pipeline
+1. Open Sprint3_Housing_Modeling.ipynb in Jupyter Notebook.
+2. Run all cells by clicking Kernel → Restart & Run All.
+3. The notebook will automatically load the data, preprocess it, and prepare it for model training.
 
+## Evaluating Models
+- The following machine learning models are trained and evaluated within the notebook:
+ - Linear Regression
+ - Ridge Regression
+ - Random Forest Regressor
+
+- Evaluation metrics calculated for each model include:
+ - Root Mean Squared Error (RMSE)
+ - Mean Absolute Error (MAE)
+ - R² score
+
+- Model performances are printed and compared at the end of the notebook.
+
+## Reproducing Results
+- After setting up the environment, open Sprint3_Housing_Modeling.ipynb and select Kernel → Restart & Run All.
+- This will fully rerun the preprocessing, model training, evaluation, and generate all results automatically.
+- No manual intervention is needed.
 
 ## Project Organization
 
