@@ -6,6 +6,21 @@
 
 Predicting Seattle home prices using machine learning to support first-time buyers and inform real estate decisions.
 
+## Dependencies
+This project requires the following Python libraries:
+
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+jupyter
+joblib
+
+Install all dependencies by running:
+
+pip install -r requirements.txt
+
 ## Project Organization
 
 ```
