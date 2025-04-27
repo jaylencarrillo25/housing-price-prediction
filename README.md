@@ -28,6 +28,7 @@ Install all dependencies by running:
 `pip install -r requirements.txt`
 
 Download the dataset:
+
 https://www.kaggle.com/datasets/samuelcortinhas/house-price-prediction-seattle 
 
 ## Project Organization
