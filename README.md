@@ -10,8 +10,8 @@ Predicting Seattle home prices using machine learning to support first-time buye
 This project requires the following Python libraries:
 
 - pandas
--numpy
--scikit-learn
+- numpy
+- scikit-learn
 - matplotlib
 - seaborn
 - jupyter
