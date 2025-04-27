@@ -21,15 +21,21 @@ This project requires the following Python libraries:
 - joblib
 
 ## Setting Up the Environment
-1. Clone the repository:
+1. Clone the repository
 
 `git clone https://github.com/jaylencarrillo25/housing-price-prediction.git`
 
 `cd housing-price-prediction`
 
-2. Install all dependencies by running:
+2. Install all dependencies by running
 
 `pip install -r requirements.txt`
+
+3. Launch Jupyter Notebook
+
+`jupyter notebook`
+
+4. In the Jupyter interface, navigate to the housing-price-prediction folder and open Sprint3_Housing_Modeling.ipynb to view and run the notebook.
 
 
 ## Project Organization
