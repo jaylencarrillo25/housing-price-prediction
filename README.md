@@ -10,16 +10,22 @@ Predicting Seattle home prices using machine learning to support first-time buye
 This project requires the following Python libraries:
 
 pandas
+
 numpy
+
 scikit-learn
+
 matplotlib
+
 seaborn
+
 jupyter
+
 joblib
 
 Install all dependencies by running:
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 ## Project Organization
 
