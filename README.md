@@ -9,7 +9,7 @@ Course: INST414 0202
 
 Predicting Seattle home prices using machine learning to support first-time buyers and inform real estate decisions.
 
-Dataset used:
+I used a publicly available dataset from Kaggle:  
 
 https://www.kaggle.com/datasets/samuelcortinhas/house-price-prediction-seattle 
 
@@ -43,6 +43,16 @@ This project requires the following Python libraries:
 2. Run all cells by clicking Kernel → Restart & Run All.
 3. The notebook will automatically load the data, preprocess it, and prepare it for model training.
 
+The notebook includes:
+- Data loading and cleaning
+- Feature engineering (e.g., price per square foot, bath-to-bed ratio)
+- Exploratory data analysis
+- Training and tuning of three models (Linear Regression, Ridge, Random Forest)
+- Performance evaluation using R², MAE, and RMSE
+
+
+Some reusable code for loading data, creating features, and training models is also included in the `housing_predictor/` folder. While the notebook runs everything from start to finish, these Python scripts are organized for future use in apps or other projects.
+
 ## Evaluating Models
 - The following machine learning models are trained and evaluated within the notebook:
   
@@ -59,9 +69,12 @@ This project requires the following Python libraries:
 - Model performances are printed and compared at the end of the notebook.
 
 ## Reproducing Results
-- After setting up the environment, open Sprint3_Housing_Modeling.ipynb and select Kernel → Restart & Run All.
-- This will fully rerun the preprocessing, model training, evaluation, and generate all results automatically.
-- No manual intervention is needed.
+To fully reproduce the analysis:
+1. Set up your environment using the instructions above
+2. Open `notebooks/Sprint3_Housing_Modeling.ipynb`
+3. Click **Kernel > Restart & Run All**
+
+This will re-run the full pipeline, including data processing, feature creation, training, tuning, and evaluation. No manual edits are required. Results will be consistent if random seeds are not changed.
 
 ## Project Organization
 
